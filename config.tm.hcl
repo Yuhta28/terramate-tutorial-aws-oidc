@@ -1,15 +1,15 @@
 globals "terraform" {
-  version = "1.8.5"
+  version = ">= 1.7"
 }
 
 globals "terraform" "backend" {
-  bucket = "terramate-example-terraform-state-backend"
-  region = "us-east-1"
+  bucket = "terramate-s3-backend-yuta"
+  region = "ap-northeast-1"
 }
 
 globals "aws" "oidc" {
   github_repositories = [
-    "terramate-io/terramate-quickstart-aws",
+    "Yuhta28/terramate-tutorial-aws-oidc:ref:refs/heads/main",
     # "another-org/another-repo:ref:refs/heads/main",
   ]
 }
@@ -19,6 +19,6 @@ globals "terraform" "providers" "aws" {
   source  = "hashicorp/aws"
   version = "~> 5.48"
   config = {
-    region = "us-east-1"
+    region = "ap-northeast-1"
   }
 }

@@ -1,7 +1,7 @@
 // TERRAMATE: GENERATED AUTOMATICALLY DO NOT EDIT
 
 terraform {
-  required_version = "1.7.2"
+  required_version = ">= 1.7"
 }
 terraform {
   required_providers {
@@ -12,5 +12,5 @@ terraform {
   }
 }
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-northeast-1"
 }
