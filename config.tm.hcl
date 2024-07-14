@@ -9,7 +9,7 @@ globals "terraform" "backend" {
 
 globals "aws" "oidc" {
   github_repositories = [
-    "Yuhta28/terramate-tutorial-aws-oidc:ref:refs/heads/main",
+    "Yuhta28/terramate-tutorial-aws-oidc",
     # "another-org/another-repo:ref:refs/heads/main",
   ]
 }
