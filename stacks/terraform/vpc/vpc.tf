@@ -1,11 +1,3 @@
-resource "aws_vpc" "main" {
-  cidr_block = "10.0.0.0/16"
-
-  tags = {
-    Name = "terramate-vpc2"
-  }
-}
-
 resource "aws_vpc" "vpc" {
   cidr_block = "10.0.0.0/16"
 
